@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de Encuesta FreeCodeCamp</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Formulario de Encuesta FrreCodeCamp</h1>
+  <p id="description">
+    Gracias por tomarte el tiempo de rellenar el formulario para mejorar la plataforma
+  </p>
+
+  <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+
+    <fieldset>
+      <label for="name" id="name-label">Nombre:
+        <input type="text" id="name" name="nombre de usuario" required placeholder="nombre de usuario">
+      </label>
+      
+
+      <label for="email" id="email-label">Email:
+        <input type="email" id="email" name="correo-electronico" required placeholder="email">
+      </label>
+      
+
+      <label for="number" id="number-label">Edad:
+        <input type="number" id="number" name="Edad de usuario" required placeholder="Edad en años" min="10" max="80">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="roles">¿Qué opción describe mejor su rol?<br>
+        <select id="dropdown" name="selector">
+          <option value="">Seleccione una opción:</option>
+          <option value="1">Estudiante</option>
+          <option value="2">Trabajo a tiempo completo</option>
+          <option value="3">Aprendizaje a tiempo completo</option>
+          <option value="4">Prefiero no decirlo</option>
+          <option value="5">Otros</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend for="recomendacion">¿Recomendarías freeCodeCamp a un amigo?</legend>
+      <label for="definitivamente">
+        <input type="radio" id="definitivamente" name="respuesta" class="inline" checked value="1"> Definitivamente
+      </label>
+      
+      <label for="duda">
+        <input type="radio" id="duda" name="respuesta" class="inline" value="2"> Quizás
+      </label>
+      
+      <label for="no">
+        <input type="radio" id="no" name="respuesta" class="inline" value="3"> No lo recomiendo
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="eleccion">¿Cuál es la característica favorita de freeCodeCamp?<br>
+        <select id="dropdown" name="selector">
+          <option value="">Seleccione una opción</option>
+          <option value="1">Desafíos</option>
+          <option value="2">Proyecto</option>
+          <option value="3">Comunidad</option>
+          <option value="4">Prácticas a código abierto</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="Especialidad">¿En qué le gustaría mejorar o especializarse? (Marque todas las opciones que correspondan)<br>
+
+        <label><input type="checkbox" class="inline" value="proyecto-frontend"> Proyecto de front-end</label>
+        <label><input type="checkbox" class="inline" value="proyecto-backend"> Proyectos back-end</label>
+        <label><input type="checkbox" class="inline" value="visualizacion"> Visualización de datos</label>
+        <label><input type="checkbox" class="inline" value="desafios"> Desafíos</label>
+        <label><input type="checkbox" class="inline" value="comunidad"> Comunidad de código abierto</label>
+        <label><input type="checkbox" class="inline" value="gitter"> Sala de ayuda Gitter</label>
+        <label><input type="checkbox" class="inline" value="video"> Edición de videos</label>
+        <label><input type="checkbox" class="inline" value="wiki"> Wiki</label>
+        <label><input type="checkbox" class="inline" value="foro"> Foro</label>
+        <label><input type="checkbox" class="inline" value="programacion"> Programación</label>
+        <label><input type="checkbox" class="inline" value="cursos"> Cursos Adicionales</label>
+
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="comentario">¿Algún comentario o sugerencia?</label><br>
+      <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <button id="submit" type="submit" value="">Enviar</button>
+    </fieldset>
+
+  </form>
+</body>
+</html>

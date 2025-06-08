@@ -1,0 +1,100 @@
+/* Estilo general del cuerpo */
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family:  sans-serif;
+  font-size: 16px;
+}
+
+/* Títulos y párrafos */
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+/* Formulario centrado y con ancho adaptable */
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+/* Separación de secciones del formulario */
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+/* Etiquetas de campos */
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+/* Campos de entrada y selección */
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  font-size: 1rem;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  padding: 0.4em;
+  box-sizing: border-box;
+}
+
+/* Estilo especial para checkbox y radio en línea */
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+/* Botón de envío */
+button[type="submit"],
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1.5em auto;
+  height: 2.5em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background-color: #5c5c78;
+}
+
+/* Archivos (si se usara input tipo file) */
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+/* Enlaces */
+a {
+  color: #dfdfe2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
